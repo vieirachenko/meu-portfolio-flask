@@ -1,0 +1,37 @@
+/* Estilo do botão de ver projeto */
+.btn-projeto {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 1px solid var(--cor-primaria);
+}
+
+.btn-projeto:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+/* Centralizando os contatos diretos */
+.info-contato-direto {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.info-contato-direto a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-contato-direto a:hover {
+    text-decoration: underline;
+}
