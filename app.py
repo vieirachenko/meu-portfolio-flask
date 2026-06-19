@@ -4,6 +4,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask import Flask, render_template, request
+import config  # Conexão com o seu arquivo de configurações
 
 # CORREÇÃO DO BUG DO WINDOWS
 mimetypes.add_type('text/css', '.css')
@@ -49,8 +50,10 @@ def contato():
     # ==========================================
     
     MEU_EMAIL = "7sevendevelopers@gmail.com"
-    SENHA_APP = "thyz cvsj blum ygnm" # Cole a senha de 16 letras gerada no Google aqui!
     
+    # IMPORTANTE: Esta linha precisa estar alinhada (indentada) dentro da função!
+    SENHA_APP = config.SENHA_GMAIL 
+
     try:
         # Criando a estrutura do e-mail
         msg = MIMEMultipart()
